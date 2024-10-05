@@ -14,11 +14,11 @@ function calculate(operator) {
             result = num1 * num2;
             break;
         case '/':
-            result = num2 !== 0 ? num1 / num2 : 'Không thể chia cho 0';
+            result = num2 !== 0 ? num1 / num2 : 'Không thể chia cho 0 nha';
             break;
         default:
             result = 'Lỗi';
     }
-
+//Ghi chu cho cái này 
     document.getElementById('result').innerText = result;
 }

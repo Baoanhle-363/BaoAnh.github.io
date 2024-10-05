@@ -2,7 +2,7 @@ function calculate(operator) {
     const num1 = parseFloat(document.getElementById('num1').value);
     const num2 = parseFloat(document.getElementById('num2').value);
     let result;
-
+// them ghi chú ở dòng 5
     switch (operator) {
         case '+':
             result = num1 + num2;

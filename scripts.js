@@ -1,20 +1,20 @@
 function calculate(operator) {
-    const str1 = document.getElementById('num1').value;
-    const str2 = document.getElementById('num2').value;
+    const num1 = parseFloat(document.getElementById('num1').value);
+    const num2 = parseFloat(document.getElementById('num2').value);
     let result;
 
     switch (operator) {
         case '+':
-            result = str1 + str2; // Nối hai chuỗi lại với nhau
+            result = num1 + num2;
             break;
         case '-':
-            result = 'Không thể thực hiện phép trừ trên chuỗi'; // Tùy chỉnh thông báo
+            result = num1 - num2;
             break;
         case '*':
-            result = 'Không thể thực hiện phép nhân trên chuỗi'; // Tùy chỉnh thông báo
+            result = num1 * num2;
             break;
         case '/':
-            result = 'Không thể thực hiện phép chia trên chuỗi'; // Tùy chỉnh thông báo
+            result = num2 !== 0 ? num1 / num2 : 'Không thể chia cho 0';
             break;
         default:
             result = 'Lỗi';

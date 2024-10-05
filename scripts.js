@@ -2,7 +2,10 @@ function calculate(operator) {
     const num1 = parseFloat(document.getElementById('num1').value);
     const num2 = parseFloat(document.getElementById('num2').value);
     let result;
+
 // them cai ghi chu mới
+// them ghi chú ở dòng 5
+
     switch (operator) {
         case '+':
             result = num1 + num2;
@@ -14,11 +17,11 @@ function calculate(operator) {
             result = num1 * num2;
             break;
         case '/':
-            result = num2 !== 0 ? num1 / num2 : 'Không thể chia cho 0';
+            result = num2 !== 0 ? num1 / num2 : 'Không thể chia cho 0 nha';
             break;
         default:
             result = 'Lỗi';
     }
-
+//Ghi chu cho cái này 
     document.getElementById('result').innerText = result;
 }
